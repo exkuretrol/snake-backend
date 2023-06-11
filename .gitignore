@@ -1,2 +1,8 @@
+# python class cache
 __pycache__
+
+# vscode configuration
 .vscode
+
+# dotenv
+.env
