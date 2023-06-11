@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GluttonousSnake</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 1px solid #aaa;
+            }
+
+            td {
+                width: 24px;
+                height: 24px;
+                color: red;
+                text-align: center;
+                border: 1px solid #aaa;
+            }
+            .status {
+                display: flex;
+                flex-direction: row;
+            }
+            .status > h3 {
+                min-width: 100px;
+                border-right: solid;
+                padding: 0 10px;
+            }
+            .hidden {
+                display: none;
+            }
+
+            #app {
+                overflow: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="status debug">
+            <h3 id="f">幀數號：0</h3>
+            <h3 id="sff">加速幀數號：0</h3>
+            <h3 id="during">during：0</h3>
+            <h3 id="snake">snake status：</h3>
+        </div>
+        <div class="status ">
+            <h3 id="score">分　數：0</h3>
+        </div>
+
+        <div id="app"></div>
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>
